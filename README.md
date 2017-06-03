@@ -9,6 +9,8 @@
 
 # ESLint
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Aladdin-ADD/eslint.svg)](https://greenkeeper.io/)
+
 [Website](http://eslint.org) |
 [Configuring](http://eslint.org/docs/user-guide/configuring) |
 [Rules](http://eslint.org/docs/rules/) |
