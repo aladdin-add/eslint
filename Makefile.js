@@ -825,17 +825,20 @@ target.browserify = function() {
     // 4. create new load-rule.js with hardcoded requires
     generateRulesIndex(TEMP_DIR);
 
-    // 5. browserify the temp directory
-    nodeCLI.exec("browserify", "-x espree", `${TEMP_DIR}linter.js`, "-o", `${BUILD_DIR}eslint.js`, "-s eslint", "--global-transform [ babelify --presets [ es2015 ] ]");
+    // // 5. browserify the temp directory
+    // nodeCLI.exec("browserify", "-x espree", `${TEMP_DIR}linter.js`, "-o", `${BUILD_DIR}eslint.js`, "-s eslint", "--global-transform [ babelify --presets [ es2015 ] ]");
+
+    // 5. rollup
+    nodeCLI.exec("rollup", "-c rollup.config.js", `-o ${BUILD_DIR}eslint.js`);
 
     // 6. Browserify espree
-    nodeCLI.exec("browserify", "-r espree", "-o", `${TEMP_DIR}espree.js`);
+    // nodeCLI.exec("browserify", "-r espree", "-o", `${TEMP_DIR}espree.js`);
 
     // 7. Concatenate Babel polyfill, Espree, and ESLint files together
-    cat("./node_modules/babel-polyfill/dist/polyfill.js", `${TEMP_DIR}espree.js`, `${BUILD_DIR}eslint.js`).to(`${BUILD_DIR}eslint.js`);
+    // cat("./node_modules/babel-polyfill/dist/polyfill.js", `${TEMP_DIR}espree.js`, `${BUILD_DIR}eslint.js`).to(`${BUILD_DIR}eslint.js`);
 
     // 8. remove temp directory
-    rm("-r", TEMP_DIR);
+    // rm("-r", TEMP_DIR);
 };
 
 target.checkRuleFiles = function() {
