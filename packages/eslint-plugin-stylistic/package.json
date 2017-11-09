@@ -1,0 +1,36 @@
+{
+  "name": "eslint-plugin-stylistic",
+  "version": "0.0.1",
+  "author": "Nicholas C. Zakas <nicholas+npm@nczconsulting.com>",
+  "description": "ESLint plugin contains stylistic rules.",
+  "scripts": {
+    "lint": "eslint -c eslint lib tests",
+    "test": "node ./index.js",
+    "prepublish": "npm test"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eslint/eslint"
+  },
+  "homepage": "https://eslint.org",
+  "bugs": "https://github.com/eslint/eslint/issues/",
+  "peerDependencies": {
+    "eslint": ">=4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-eslint": "^4.0.0"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "stylistc"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
