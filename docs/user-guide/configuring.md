@@ -797,7 +797,7 @@ In your `.eslintrc.json`:
 
 Both the JSON and YAML configuration file formats support comments (`package.json` files should not include them). You can use JavaScript-style comments or YAML-style comments in either type of file and ESLint will safely ignore them. This allows your configuration files to be more human-friendly. For example:
 
-```js
+```json
 {
     "env": {
         "browser": true
