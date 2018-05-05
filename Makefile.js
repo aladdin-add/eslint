@@ -819,16 +819,18 @@ target.browserify = function() {
     generateRulesIndex(TEMP_DIR);
 
     // 5. browserify the temp directory
-    exec(`${getBinFile("browserify")} -x espree ${TEMP_DIR}linter.js -o ${BUILD_DIR}eslint.js -s eslint --global-transform [ babelify --presets [ es2015 ] ]`);
-
+    // exec(`${getBinFile("browserify")} -x espree ${TEMP_DIR}linter.js -o ${BUILD_DIR}eslint.js -s eslint --global-transform [ babelify --presets [ es2015 ] ]`);
+    exec(`${getBinFile("webpack")} --mode production ${TEMP_DIR}linter.js -o ${BUILD_DIR}eslint.js`);
+ 
     // 6. Browserify espree
-    exec(`${getBinFile("browserify")} -r espree -o ${TEMP_DIR}espree.js`);
+    // exec(`${getBinFile("browserify")} -r espree -o ${TEMP_DIR}espree.js`);
+    exec(`${getBinFile("webpack")} --mode production espree -o ${TEMP_DIR}espree.js`);
 
     // 7. Concatenate Babel polyfill, Espree, and ESLint files together
     cat("./node_modules/babel-polyfill/dist/polyfill.js", `${TEMP_DIR}espree.js`, `${BUILD_DIR}eslint.js`).to(`${BUILD_DIR}eslint.js`);
 
     // 8. remove temp directory
-    rm("-r", TEMP_DIR);
+    // rm("-r", TEMP_DIR);
 };
 
 target.checkRuleFiles = function() {
