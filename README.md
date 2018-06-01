@@ -193,34 +193,148 @@ These folks keep the project moving and are resources for help.
 
 ### Technical Steering Committee (TSC)
 
-* Nicholas C. Zakas ([@nzakas](https://github.com/nzakas))
-* Ilya Volodin ([@ilyavolodin](https://github.com/ilyavolodin))
-* Brandon Mills ([@btmills](https://github.com/btmills))
-* Gyandeep Singh ([@gyandeeps](https://github.com/gyandeeps))
-* Toru Nagashima ([@mysticatea](https://github.com/mysticatea))
-* Alberto Rodríguez ([@alberto](https://github.com/alberto))
-* Kai Cataldo ([@kaicataldo](https://github.com/kaicataldo))
-* Teddy Katz ([@not-an-aardvark](https://github.com/not-an-aardvark))
-* Kevin Partington ([@platinumazure](https://github.com/platinumazure))
+<table>
+    <tbody>
+        <tr>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/nzakas.png?s=75">
+                <br/>
+                <a href="https://github.com/nzakas">Nicholas C. Zakas</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/ilyavolodin.png?s=75">
+                <br/>
+                <a href="https://github.com/ilyavolodin">Ilya Volodin</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/btmills.png?s=75">
+                <br/>
+                <a href="https://github.com/btmills">Brandon Mills</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/gyandeeps.png?s=75">
+                <br/>
+                <a href="https://github.com/gyandeeps">Gyandeep Singh</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/mysticatea.png?s=75">
+                <br/>
+                <a href="https://github.com/mysticatea">Toru Nagashima</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/alberto.png?s=75">
+                <br/>
+                <a href="https://github.com/alberto">Alberto Rodríguez</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/kaicataldo.png?s=75">
+                <br/>
+                <a href="https://github.com/kaicataldo">Kai Cataldo</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/not-an-aardvark.png?s=75">
+                <br/>
+                <a href="https://github.com/not-an-aardvark">Teddy Katz</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/platinumazure.png?s=75">
+                <br/>
+                <a href="https://github.com/platinumazure">Kevin Partington</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Development Team
 
-* Mathias Schreck ([@lo1tuma](https://github.com/lo1tuma))
-* Jamund Ferguson ([@xjamundx](https://github.com/xjamundx))
-* Ian VanSchooten ([@ianvs](https://github.com/ianvs))
-* Burak Yiğit Kaya ([@byk](https://github.com/byk))
-* Michael Ficarra ([@michaelficarra](https://github.com/michaelficarra))
-* Mark Pedrotti ([@pedrottimark](https://github.com/pedrottimark))
-* Oleg Gaidarenko ([@markelog](https://github.com/markelog))
-* Mike Sherov ([@mikesherov](https://github.com/mikesherov))
-* Henry Zhu ([@hzoo](https://github.com/hzoo))
-* Marat Dulin ([@mdevils](https://github.com/mdevils))
-* Alexej Yaroshevich ([@zxqfox](https://github.com/zxqfox))
-* Vitor Balocco ([@vitorbal](https://github.com/vitorbal))
-* James Henry ([@JamesHenry](https://github.com/JamesHenry))
-* Reyad Attiyat ([@soda0289](https://github.com/soda0289))
-* 薛定谔的猫 ([@Aladdin-ADD](https://github.com/Aladdin-ADD))
-* Victor Hom ([@VictorHom](https://github.com/VictorHom))
+<table>
+    <tbody>
+        <tr>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/lo1tuma.png?s=75">
+                <br/>
+                <a href="https://github.com/lo1tuma">Mathias Schreck</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/xjamundx.png?s=75">
+                <br/>
+                <a href="https://github.com/xjamundx">Jamund Ferguson</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/ianvs.png?s=75">
+                <br/>
+                <a href="https://github.com/ianvs">Ian VanSchooten</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/byk.png?s=75">
+                <br/>
+                <a href="https://github.com/byk">Burak Yiğit Kaya</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/michaelficarra.png?s=75">
+                <br/>
+                <a href="https://github.com/michaelficarra">Michael Ficarra</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/pedrottimark.png?s=75">
+                <br/>
+                <a href="https://github.com/pedrottimark">Mark Pedrotti</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/markelog.png?s=75">
+                <br/>
+                <a href="https://github.com/markelog">Oleg Gaidarenko</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/mikesherov.png?s=75">
+                <br/>
+                <a href="https://github.com/mikesherov">Mike Sherov</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/hzoo.png?s=75">
+                <br/>
+                <a href="https://github.com/hzoo">Henry Zhu</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/mdevils.png?s=75">
+                <br/>
+                <a href="https://github.com/mdevils">Marat Dulin</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/zxqfox.png?s=75">
+                <br/>
+                <a href="https://github.com/zxqfox">Alexej Yaroshevich</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/vitorbal.png?s=75">
+                <br/>
+                <a href="https://github.com/vitorbal">Vitor Balocco</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/JamesHenry.png?s=75">
+                <br/>
+                <a href="https://github.com/JamesHenry">James Henry</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/soda0289.png?s=75">
+                <br/>
+                <a href="https://github.com/soda0289">Reyad Attiyat</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/Aladdin-ADD.png?s=75">
+                <br/>
+                <a href="https://github.com/Aladdin-ADD">薛定谔的猫</a>
+            </td>
+            <td align="center" valign="top">
+                <img width="75" height="75" src="https://github.com/VictorHom.png?s=75">
+                <br/>
+                <a href="https://github.com/VictorHom">Victor Hom</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Sponsors
 
