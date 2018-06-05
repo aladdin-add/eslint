@@ -194,7 +194,7 @@ These folks keep the project moving and are resources for help.
 ### Technical Steering Committee (TSC)
 
 <table>
-    <tbody>
+    <tbody style="font-size: 80%;">
         <tr>
             <td align="center" valign="top">
                 <img width="75" height="75" src="https://github.com/nzakas.png?s=75">
@@ -248,7 +248,7 @@ These folks keep the project moving and are resources for help.
 ### Development Team
 
 <table>
-    <tbody>
+    <tbody style="font-size: 80%;">
         <tr>
             <td align="center" valign="top">
                 <img width="75" height="75" src="https://github.com/lo1tuma.png?s=75">
