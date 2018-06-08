@@ -193,51 +193,51 @@ These folks keep the project moving and are resources for help.
 
 ### Technical Steering Committee (TSC)
 
-<table>
-    <tbody style="font-size: 80%;">
+<table style="font-size: 80%;">
+    <tbody>
         <tr>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/nzakas.png?s=75">
+                <img src="https://github.com/nzakas.png?s=75">
                 <br/>
                 <a href="https://github.com/nzakas">Nicholas C. Zakas</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/ilyavolodin.png?s=75">
+                <img src="https://github.com/ilyavolodin.png?s=75">
                 <br/>
                 <a href="https://github.com/ilyavolodin">Ilya Volodin</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/btmills.png?s=75">
+                <img src="https://github.com/btmills.png?s=75">
                 <br/>
                 <a href="https://github.com/btmills">Brandon Mills</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/gyandeeps.png?s=75">
+                <img src="https://github.com/gyandeeps.png?s=75">
                 <br/>
                 <a href="https://github.com/gyandeeps">Gyandeep Singh</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/mysticatea.png?s=75">
+                <img src="https://github.com/mysticatea.png?s=75">
                 <br/>
                 <a href="https://github.com/mysticatea">Toru Nagashima</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/alberto.png?s=75">
+                <img src="https://github.com/alberto.png?s=75">
                 <br/>
                 <a href="https://github.com/alberto">Alberto Rodríguez</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/kaicataldo.png?s=75">
+                <img src="https://github.com/kaicataldo.png?s=75">
                 <br/>
                 <a href="https://github.com/kaicataldo">Kai Cataldo</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/not-an-aardvark.png?s=75">
+                <img src="https://github.com/not-an-aardvark.png?s=75">
                 <br/>
                 <a href="https://github.com/not-an-aardvark">Teddy Katz</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/platinumazure.png?s=75">
+                <img src="https://github.com/platinumazure.png?s=75">
                 <br/>
                 <a href="https://github.com/platinumazure">Kevin Partington</a>
             </td>
@@ -247,88 +247,88 @@ These folks keep the project moving and are resources for help.
 
 ### Development Team
 
-<table>
-    <tbody style="font-size: 80%;">
+<table style="font-size: 80%;">
+    <tbody>
         <tr>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/lo1tuma.png?s=75">
+                <img src="https://github.com/lo1tuma.png?s=75">
                 <br/>
                 <a href="https://github.com/lo1tuma">Mathias Schreck</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/xjamundx.png?s=75">
+                <img src="https://github.com/xjamundx.png?s=75">
                 <br/>
                 <a href="https://github.com/xjamundx">Jamund Ferguson</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/ianvs.png?s=75">
+                <img src="https://github.com/ianvs.png?s=75">
                 <br/>
                 <a href="https://github.com/ianvs">Ian VanSchooten</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/byk.png?s=75">
+                <img src="https://github.com/byk.png?s=75">
                 <br/>
                 <a href="https://github.com/byk">Burak Yiğit Kaya</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/michaelficarra.png?s=75">
+                <img src="https://github.com/michaelficarra.png?s=75">
                 <br/>
                 <a href="https://github.com/michaelficarra">Michael Ficarra</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/pedrottimark.png?s=75">
+                <img src="https://github.com/pedrottimark.png?s=75">
                 <br/>
                 <a href="https://github.com/pedrottimark">Mark Pedrotti</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/markelog.png?s=75">
+                <img src="https://github.com/markelog.png?s=75">
                 <br/>
                 <a href="https://github.com/markelog">Oleg Gaidarenko</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/mikesherov.png?s=75">
+                <img src="https://github.com/mikesherov.png?s=75">
                 <br/>
                 <a href="https://github.com/mikesherov">Mike Sherov</a>
             </td>
         </tr>
         <tr>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/hzoo.png?s=75">
+                <img src="https://github.com/hzoo.png?s=75">
                 <br/>
                 <a href="https://github.com/hzoo">Henry Zhu</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/mdevils.png?s=75">
+                <img src="https://github.com/mdevils.png?s=75">
                 <br/>
                 <a href="https://github.com/mdevils">Marat Dulin</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/zxqfox.png?s=75">
+                <img src="https://github.com/zxqfox.png?s=75">
                 <br/>
                 <a href="https://github.com/zxqfox">Alexej Yaroshevich</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/vitorbal.png?s=75">
+                <img src="https://github.com/vitorbal.png?s=75">
                 <br/>
                 <a href="https://github.com/vitorbal">Vitor Balocco</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/JamesHenry.png?s=75">
+                <img src="https://github.com/JamesHenry.png?s=75">
                 <br/>
                 <a href="https://github.com/JamesHenry">James Henry</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/soda0289.png?s=75">
+                <img src="https://github.com/soda0289.png?s=75">
                 <br/>
                 <a href="https://github.com/soda0289">Reyad Attiyat</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/Aladdin-ADD.png?s=75">
+                <img src="https://github.com/Aladdin-ADD.png?s=75">
                 <br/>
                 <a href="https://github.com/Aladdin-ADD">薛定谔的猫</a>
             </td>
             <td align="center" valign="top">
-                <img width="75" height="75" src="https://github.com/VictorHom.png?s=75">
+                <img src="https://github.com/VictorHom.png?s=75">
                 <br/>
                 <a href="https://github.com/VictorHom">Victor Hom</a>
             </td>
