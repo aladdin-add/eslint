@@ -303,6 +303,12 @@ describe("Validator", () => {
                 validator.validate({ rules: { "mock-rule": ["Error", "second"] } }, "tests", ruleMapper, linter.environments);
             });
 
+            it("should throw an error when the rule does not exist", () => {
+                const fn = validator.validate.bind(null, { rules: { "non-exsistent-rule": "off" } }, "tests", ruleMapper, linter.environments);
+
+                assert.throws(fn, "Definition for rule 'non-exsistent-rule' was not found.");
+            });
+
             it("should catch invalid rule options", () => {
                 const fn = validator.validate.bind(null, { rules: { "mock-rule": [3, "third"] } }, "tests", ruleMapper, linter.environments);
 
