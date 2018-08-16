@@ -1139,13 +1139,13 @@ describe("Linter", () => {
                         d = getVariable(scope, "d");
 
                     assert.strictEqual(a.name, "a");
-                    assert.strictEqual(a.writeable, false);
+                    assert.strictEqual(a.writeable, "readonly");
                     assert.strictEqual(b.name, "b");
-                    assert.strictEqual(b.writeable, true);
+                    assert.strictEqual(b.writeable, "writeable");
                     assert.strictEqual(c.name, "c");
-                    assert.strictEqual(c.writeable, false);
+                    assert.strictEqual(c.writeable, "readonly");
                     assert.strictEqual(d.name, "d");
-                    assert.strictEqual(d.writeable, true);
+                    assert.strictEqual(d.writeable, "writeable");
                 });
 
                 return { Program: spy };
@@ -1171,11 +1171,11 @@ describe("Linter", () => {
                         c = getVariable(scope, "c");
 
                     assert.strictEqual(a.name, "a");
-                    assert.strictEqual(a.writeable, false);
+                    assert.strictEqual(a.writeable, "readonly");
                     assert.strictEqual(b.name, "b");
-                    assert.strictEqual(b.writeable, true);
+                    assert.strictEqual(b.writeable, "writeable");
                     assert.strictEqual(c.name, "c");
-                    assert.strictEqual(c.writeable, false);
+                    assert.strictEqual(c.writeable, "readonly");
                 });
 
                 return { Program: spy };
@@ -1198,8 +1198,8 @@ describe("Linter", () => {
                         exports = getVariable(scope, "exports"),
                         window = getVariable(scope, "window");
 
-                    assert.strictEqual(exports.writeable, true);
-                    assert.strictEqual(window.writeable, false);
+                    assert.strictEqual(exports.writeable, "writeable");
+                    assert.strictEqual(window.writeable, "readonly");
                 });
 
                 return { Program: spy };
@@ -1223,7 +1223,7 @@ describe("Linter", () => {
                         exports = getVariable(scope, "exports"),
                         window = getVariable(scope, "window");
 
-                    assert.strictEqual(exports.writeable, true);
+                    assert.strictEqual(exports.writeable, "writeable");
                     assert.strictEqual(window, null);
                 });
 
