@@ -478,7 +478,7 @@ describe("ConfigArray", () => {
 
             assert.isArray(result.rules["no-mixed-requires"]);
             assert.strictEqual(result.rules["no-mixed-requires"][0], 1);
-            assert.strictEqual(result.rules["no-mixed-requires"][1], false);
+            assert.strictEqual(result.rules["no-mixed-requires"][1], void 0);
             assert.deepStrictEqual(config[0], { rules: { "no-mixed-requires": [0, false] } });
             assert.deepStrictEqual(config[1], { rules: { "no-mixed-requires": 1 } });
         });
@@ -524,8 +524,8 @@ describe("ConfigArray", () => {
             const result = merge(config[0], config[1]);
 
             assert.strictEqual(result.rules["no-mixed-requires1"][0], "error");
-            assert.strictEqual(result.rules["no-mixed-requires1"][1], "nconf");
-            assert.strictEqual(result.rules["no-mixed-requires1"][2], "underscore");
+            assert.strictEqual(result.rules["no-mixed-requires1"][1], void 0);
+            assert.strictEqual(result.rules["no-mixed-requires1"][2], void 0);
             assert.deepStrictEqual(config[0], { rules: { "no-mixed-requires1": [1, "nconf", "underscore"] } });
             assert.deepStrictEqual(config[1], { rules: { "no-mixed-requires1": "error" } });
         });

@@ -480,7 +480,7 @@ describe("CascadingConfigArrayFactory", () => {
                         node: true
                     },
                     rules: {
-                        quotes: [0, "double"]
+                        quotes: [0]
                     }
                 };
                 const actual = getConfig(factory, file);
@@ -520,7 +520,7 @@ describe("CascadingConfigArrayFactory", () => {
                         node: true
                     },
                     rules: {
-                        quotes: [0, "single"],
+                        quotes: [0],
                         "no-console": [1]
                     }
                 };
