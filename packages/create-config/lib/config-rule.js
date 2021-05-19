@@ -2,10 +2,7 @@
  * @fileoverview Create configurations for a rule
  * @author Ian VanSchooten
  */
-/*
- * TODO: the file has been moved to @eslint/create-config, but it's used by some
- * other files, to be moved!
- */
+
 "use strict";
 
 //------------------------------------------------------------------------------

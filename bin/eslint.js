@@ -134,7 +134,11 @@ ${message}`);
 
     // Call the config initializer if `--init` is present.
     if (process.argv.includes("--init")) {
-        await require("../lib/init/config-initializer").initializeConfig();
+
+        /*
+         * TODO: output a warning, and exec `npm init @eslint/config`
+         * await require("../lib/init/config-initializer").initializeConfig();
+         */
         return;
     }
 
