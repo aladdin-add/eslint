@@ -16,7 +16,6 @@ const assert = require("chai").assert,
     sinon = require("sinon"),
     sh = require("shelljs"),
     espree = require("espree"),
-    autoconfig = require("../../../lib/init/autoconfig"),
     npmUtils = require("../../../lib/init/npm-utils");
 
 const originalDir = process.cwd();
@@ -57,22 +56,6 @@ describe("configInitializer", () => {
         "local-eslint-3.19.0": { linter: { version: "3.19.0" }, "@noCallThru": true },
         "local-eslint-4.0.0": { linter: { version: "4.0.0" }, "@noCallThru": true }
     };
-
-    /**
-     * Returns the path inside of the fixture directory.
-     * @param {...string} args file path segments.
-     * @returns {string} The path inside the fixture directory.
-     * @private
-     */
-    function getFixturePath(...args) {
-        const filepath = path.join(fixtureDir, ...args);
-
-        try {
-            return fs.realpathSync(filepath);
-        } catch {
-            return filepath;
-        }
-    }
 
     // copy into clean area so as not to get "infected" by this project's .eslintrc files
     before(() => {
@@ -367,93 +350,6 @@ describe("configInitializer", () => {
                 const modules = init.getModulesList(config);
 
                 assert.include(modules, "@typescript-eslint/parser@latest");
-            });
-        });
-
-        describe("auto", () => {
-            const completeSpy = sinon.spy();
-            let config;
-
-            before(() => {
-                const patterns = [
-                    getFixturePath("lib"),
-                    getFixturePath("tests")
-                ].join(" ");
-
-                answers = {
-                    purpose: "style",
-                    source: "auto",
-                    patterns,
-                    env: ["browser"],
-                    format: "JSON"
-                };
-
-                sinon.stub(console, "log"); // necessary to replace, because of progress bar
-
-                process.chdir(fixtureDir);
-                config = init.processAnswers(answers);
-                sinon.restore();
-            });
-
-            after(() => {
-                sinon.restore();
-            });
-
-            afterEach(() => {
-                process.chdir(originalDir);
-                sinon.restore();
-            });
-
-            it("should create a config", () => {
-                assert.isTrue(completeSpy.notCalled);
-                assert.ok(config);
-            });
-
-            it("should create the config based on examined files", () => {
-                assert.deepStrictEqual(config.rules.quotes, ["error", "double"]);
-                assert.strictEqual(config.rules.semi, "off");
-            });
-
-            it("should extend and not disable recommended rules", () => {
-                assert.strictEqual(config.extends, "eslint:recommended");
-                assert.notProperty(config.rules, "no-debugger");
-            });
-
-            it("should not include deprecated rules", () => {
-                assert.notProperty(config.rules, "id-blacklist");
-                assert.notProperty(config.rules, "no-negated-in-lhs");
-                assert.notProperty(config.rules, "no-process-exit");
-                assert.notProperty(config.rules, "no-spaced-func");
-                assert.notProperty(config.rules, "prefer-reflect");
-            });
-
-            it("should support new ES features if using later ES version", () => {
-                const filename = getFixturePath("new-es-features");
-
-                answers.patterns = filename;
-                answers.ecmaVersion = 2017;
-                process.chdir(fixtureDir);
-                config = init.processAnswers(answers);
-            });
-
-            it("should throw on fatal parsing error", () => {
-                const filename = getFixturePath("parse-error");
-
-                sinon.stub(autoconfig, "extendFromRecommended");
-                answers.patterns = filename;
-                process.chdir(fixtureDir);
-                assert.throws(() => {
-                    config = init.processAnswers(answers);
-                }, "Parsing error: Unexpected token ;");
-            });
-
-            it("should throw if no files are matched from patterns", () => {
-                sinon.stub(autoconfig, "extendFromRecommended");
-                answers.patterns = "not-a-real-filename";
-                process.chdir(fixtureDir);
-                assert.throws(() => {
-                    config = init.processAnswers(answers);
-                }, "No files matching 'not-a-real-filename' were found.");
             });
         });
     });
