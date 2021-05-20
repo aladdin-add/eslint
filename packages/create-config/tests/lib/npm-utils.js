@@ -12,9 +12,9 @@ const
     assert = require("chai").assert,
     spawn = require("cross-spawn"),
     sinon = require("sinon"),
-    npmUtils = require("../../../lib/init/npm-utils"),
-    log = require("../../../lib/shared/logging"),
-    { defineInMemoryFs } = require("../../_utils");
+    npmUtils = require("../../lib/npm-utils"),
+    log = require("eslint/lib/shared/logging"),
+    { defineInMemoryFs } = require("../_utils");
 
 const proxyquire = require("proxyquire").noCallThru().noPreserveCache();
 
@@ -30,7 +30,7 @@ const proxyquire = require("proxyquire").noCallThru().noPreserveCache();
 function requireNpmUtilsWithInMemoryFileSystem(files) {
     const fs = defineInMemoryFs({ files });
 
-    return proxyquire("../../../lib/init/npm-utils", { fs });
+    return proxyquire("../../lib/npm-utils", { fs });
 }
 
 //------------------------------------------------------------------------------

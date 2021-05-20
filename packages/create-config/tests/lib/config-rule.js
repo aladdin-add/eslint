@@ -10,9 +10,9 @@
 //------------------------------------------------------------------------------
 
 const assert = require("chai").assert,
-    ConfigRule = require("../../../lib/init/config-rule"),
-    builtInRules = require("../../../lib/rules"),
-    schema = require("../../fixtures/config-rule/schemas");
+    ConfigRule = require("../../lib/config-rule"),
+    builtInRules = require("eslint/lib/rules"),
+    schema = require("../fixtures/config-rule/schemas");
 
 //------------------------------------------------------------------------------
 // Tests

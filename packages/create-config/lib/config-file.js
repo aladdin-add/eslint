@@ -83,7 +83,7 @@ function writeJSConfigFile(config, filePath) {
     const stringifiedContent = `module.exports = ${stringify(config, { cmp: sortByKey, space: 4 })};\n`;
 
     try {
-        const { CLIEngine } = require("../cli-engine");
+        const { CLIEngine } = require("eslint/lib/cli-engine");
         const linter = new CLIEngine({
             baseConfig: config,
             fix: true,

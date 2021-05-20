@@ -13,8 +13,8 @@ const assert = require("chai").assert,
     path = require("path"),
     yaml = require("js-yaml"),
     espree = require("espree"),
-    ConfigFile = require("../../../lib/init/config-file"),
-    { CLIEngine } = require("../../../lib/cli-engine");
+    ConfigFile = require("../../lib/config-file"),
+    { CLIEngine } = require("eslint/lib/cli-engine");
 
 const proxyquire = require("proxyquire").noCallThru().noPreserveCache();
 
@@ -75,7 +75,7 @@ describe("ConfigFile", () => {
                     "utf8"
                 );
 
-                const StubbedConfigFile = proxyquire("../../../lib/init/config-file", {
+                const StubbedConfigFile = proxyquire("../../lib/config-file", {
                     fs: fakeFS
                 });
 
@@ -93,7 +93,7 @@ describe("ConfigFile", () => {
                     "utf8"
                 );
 
-                const StubbedConfigFile = proxyquire("../../../lib/init/config-file", {
+                const StubbedConfigFile = proxyquire("../../lib/config-file", {
                     fs: fakeFS
                 });
 
@@ -118,7 +118,7 @@ describe("ConfigFile", () => {
                 "utf8"
             );
 
-            const StubbedConfigFile = proxyquire("../../../lib/init/config-file", {
+            const StubbedConfigFile = proxyquire("../../lib/config-file", {
                 fs: fakeFS
             });
 
@@ -140,9 +140,9 @@ describe("ConfigFile", () => {
 
             sinon.mock(fakeFS).expects("writeFileSync").once();
 
-            const StubbedConfigFile = proxyquire("../../../lib/init/config-file", {
+            const StubbedConfigFile = proxyquire("../../lib/config-file", {
                 fs: fakeFS,
-                "../cli-engine": { CLIEngine: fakeCLIEngine }
+                "eslint/lib/cli-engine": { CLIEngine: fakeCLIEngine }
             });
 
             assert.throws(() => {

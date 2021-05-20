@@ -16,7 +16,7 @@ const assert = require("chai").assert,
     sinon = require("sinon"),
     sh = require("shelljs"),
     espree = require("espree"),
-    npmUtils = require("../../../lib/init/npm-utils");
+    npmUtils = require("../../lib/npm-utils");
 
 const originalDir = process.cwd();
 const proxyquire = require("proxyquire").noPreserveCache();
@@ -43,7 +43,7 @@ describe("configInitializer", () => {
         error: sinon.spy()
     };
     const requireStubs = {
-        "../shared/logging": log,
+        "eslint/lib/shared/logging": log,
         "@eslint/eslintrc/lib/shared/relative-module-resolver": {
             resolve() {
                 if (localESLintVersion) {
@@ -79,7 +79,7 @@ describe("configInitializer", () => {
                 "eslint-plugin-import": "^2.2.0",
                 "eslint-plugin-react": "^7.0.1"
             });
-        init = proxyquire("../../../lib/init/config-initializer", requireStubs);
+        init = proxyquire("../../lib/config-initializer", requireStubs);
     });
 
     afterEach(() => {

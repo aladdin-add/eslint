@@ -12,7 +12,7 @@
 const fs = require("fs"),
     spawn = require("cross-spawn"),
     path = require("path"),
-    log = require("../shared/logging");
+    log = require("eslint/lib/shared/logging");
 
 //------------------------------------------------------------------------------
 // Helpers

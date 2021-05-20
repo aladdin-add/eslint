@@ -9,7 +9,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-const builtInRules = require("../rules");
+const builtInRules = require("eslint/lib/rules");
 
 //------------------------------------------------------------------------------
 // Helpers
