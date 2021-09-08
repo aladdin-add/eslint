@@ -10,3 +10,6 @@
 /tools/internal-rules/node_modules/**
 test.js
 !.eslintrc.js
+
+# TODO: removed when the eslint/create-config is ready
+packages/create-config
