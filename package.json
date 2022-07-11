@@ -4,7 +4,7 @@
   "author": "Nicholas C. Zakas <nicholas+npm@nczconsulting.com>",
   "description": "An AST-based pattern checker for JavaScript.",
   "bin": {
-    "eslint": "./bin/eslint.js"
+    "eslint": "./bin/eslint.mjs"
   },
   "main": "./lib/api.js",
   "exports": {
@@ -34,7 +34,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
+    "*.{js,mjs,cjs}": "eslint --fix",
     "*.md": "markdownlint --fix",
     "docs/src/rules/*.md": [
       "node tools/fetch-docs-links.js",

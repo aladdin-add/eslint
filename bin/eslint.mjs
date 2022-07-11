@@ -7,11 +7,18 @@
 
 /* eslint no-console:off -- CLI */
 
-"use strict";
+/*
+ * to use V8's code cache to speed up instantiation time
+ * seems no longer needed for esm
+ * require("v8-compile-cache");
+ */
+import debug from "debug";
+import fs from "fs";
+import util from "util";
 
 // must do this initialization *before* other requires in order to work
 if (process.argv.includes("--debug")) {
-    require("debug").enable("eslint:*,-eslint:code-path,eslintrc:*");
+    debug.enable("eslint:*,-eslint:code-path,eslintrc:*");
 }
 
 //------------------------------------------------------------------------------
@@ -57,16 +64,24 @@ function readStdin() {
 }
 
 /**
+ * read a json file
+ * @param {any} jsonPath the file path of the json file
+ * @returns {Object} the parsed json object
+ */
+function readJsonSync(jsonPath) {
+    const text = fs.readFileSync(new URL(jsonPath, import.meta.url), "utf8");
+
+    return JSON.parse(text);
+}
+
+/**
  * Get the error message of a given value.
  * @param {any} error The value to get.
  * @returns {string} The error message.
  */
-function getErrorMessage(error) {
+async function getErrorMessage(error) {
 
-    // Lazy loading because this is used only if an error happened.
-    const util = require("util");
-
-    // Foolproof -- third-party module might throw non-object.
+    // Foolproof -- thirdparty module might throw non-object.
     if (typeof error !== "object" || error === null) {
         return String(error);
     }
@@ -74,7 +89,7 @@ function getErrorMessage(error) {
     // Use templates if `error.messageTemplate` is present.
     if (typeof error.messageTemplate === "string") {
         try {
-            const template = require(`../messages/${error.messageTemplate}.js`);
+            const template = (await import(`../messages/${error.messageTemplate}.js`)).default;
 
             return template(error.messageData || {});
         } catch {
@@ -97,11 +112,11 @@ function getErrorMessage(error) {
  * @param {any} error The thrown error object.
  * @returns {void}
  */
-function onFatalError(error) {
+async function onFatalError(error) {
     process.exitCode = 2;
 
-    const { version } = require("../package.json");
-    const message = getErrorMessage(error);
+    const { version } = readJsonSync("../package.json");
+    const message = await getErrorMessage(error);
 
     console.error(`
 Oops! Something went wrong! :(
@@ -125,14 +140,16 @@ ${message}`);
         // `eslint --init` has been moved to `@eslint/create-config`
         console.warn("You can also run this command directly using 'npm init @eslint/config'.");
 
-        const spawn = require("cross-spawn");
+        const spawn = (await import("cross-spawn")).default;
 
         spawn.sync("npm", ["init", "@eslint/config"], { encoding: "utf8", stdio: "inherit" });
         return;
     }
 
     // Otherwise, call the CLI.
-    process.exitCode = await require("../lib/cli").execute(
+    const cli = (await import("../lib/cli.js")).default;
+
+    process.exitCode = await cli.execute(
         process.argv,
         process.argv.includes("--stdin") ? await readStdin() : null,
         true
