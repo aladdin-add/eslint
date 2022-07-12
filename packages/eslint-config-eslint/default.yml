@@ -246,7 +246,7 @@ rules:
     no-undef: ["error", { typeof: true }] # Modified from recommended
     no-undef-init: "error"
     no-undefined: "error"
-    no-underscore-dangle: ["error", { allowAfterThis: true }]
+    no-underscore-dangle: ["error", { allowAfterThis: true, allow: ["__filename", "__dirname"] }]
     no-unmodified-loop-condition: "error"
     no-unneeded-ternary: "error"
     no-unreachable-loop: "error"
