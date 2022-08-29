@@ -54,6 +54,8 @@ jobs:
       run: node Makefile mocha
     - name: Fuzz Test
       run: node Makefile fuzz
+    - name: perf
+      run: npm run perf
 
   test_on_browser:
     name: Browser Test
