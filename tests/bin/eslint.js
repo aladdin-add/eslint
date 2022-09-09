@@ -204,7 +204,7 @@ describe("bin/eslint.mjs", () => {
     });
 
     describe("running on files", () => {
-        it("has exit code 0 if no linting errors occur", () => assertExitCode(runESLint(["bin/eslint.js"]), 0));
+        it("has exit code 0 if no linting errors occur", () => assertExitCode(runESLint(["bin/eslint.mjs", "--no-config-lookup"]), 0));
         it("has exit code 0 if a linting warning is reported", () => assertExitCode(runESLint(["bin/eslint.mjs", "--no-config-lookup", "--rule", "semi: [1, never]"]), 0));
         it("has exit code 1 if a linting error is reported", () => assertExitCode(runESLint(["bin/eslint.mjs", "--no-config-lookup", "--rule", "semi: [2, never]"]), 1));
         it("has exit code 1 if a syntax error is thrown", () => assertExitCode(runESLint(["tests/fixtures/exit-on-fatal-error/fatal-error.js", "--no-ignore"]), 1));
