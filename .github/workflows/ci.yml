@@ -58,7 +58,8 @@ jobs:
       with:
         node-version: ${{ matrix.node }}
     - name: Install Packages
-      run: npm install
+    # To fix the chromedriver install error (node.js v12 compat issue)
+      run: npm install --ignore-scripts
     - name: Test
       run: node Makefile mocha
     - name: Fuzz Test
