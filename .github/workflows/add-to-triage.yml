@@ -1,3 +1,5 @@
+name: Add to Triage
+
 jobs:
   add-to-project:
-    uses: aladdin-add/actions/add-to-triage.yml@main
+    uses: aladdin-add/actions/.github/workflows/add-to-triage.yml@main
