@@ -41,4 +41,12 @@ describe("api", () => {
     it("should have SourceCode exposed", () => {
         assert.isFunction(api.SourceCode);
     });
+
+    it("should have shouldUseFlatConfig exposed", () => {
+        assert.isFunction(api.shouldUseFlatConfig);
+    });
+
+    it("should have loadESLint exposed", () => {
+        assert.isFunction(api.loadESLint);
+    });
 });
