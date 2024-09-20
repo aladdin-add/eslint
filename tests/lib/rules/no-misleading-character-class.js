@@ -175,7 +175,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 23,
                 messageId: "surrogatePairWithoutUFlag",
-                suggestions: null // pattern would be invalid with the 'u' flag
+                suggestions: [] // pattern would be invalid with the 'u' flag
             }]
         },
         {
@@ -185,7 +185,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 13,
                 messageId: "surrogatePairWithoutUFlag",
-                suggestions: null // pattern would be invalid with the 'u' flag, ecmaVersion doesn't support the 'u' flag
+                suggestions: [] // pattern would be invalid with the 'u' flag, ecmaVersion doesn't support the 'u' flag
             }]
         },
         {
@@ -222,7 +222,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 13,
                 messageId: "surrogatePairWithoutUFlag",
-                suggestions: null // ecmaVersion doesn't support the 'u' flag
+                suggestions: [] // ecmaVersion doesn't support the 'u' flag
             }]
         },
         {
@@ -231,7 +231,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 13,
                 messageId: "surrogatePairWithoutUFlag",
-                suggestions: null // pattern would be invalid with the 'u' flag
+                suggestions: [] // pattern would be invalid with the 'u' flag
             }]
         },
         {
@@ -240,7 +240,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 13,
                 endColumn: 15,
                 messageId: "surrogatePairWithoutUFlag",
-                suggestions: null // pattern would be invalid with the 'u' flag
+                suggestions: [] // pattern would be invalid with the 'u' flag
             }]
         },
         {
@@ -269,7 +269,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 13,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -278,7 +278,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 13,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -287,7 +287,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 23,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -296,7 +296,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 23,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -305,7 +305,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 24,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -314,7 +314,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 13,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -323,7 +323,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 13,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -332,7 +332,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 23,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -341,7 +341,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 23,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -350,7 +350,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 27,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -376,7 +376,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 15,
                 messageId: "emojiModifier",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -393,7 +393,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 35,
                 messageId: "emojiModifier",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -402,7 +402,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 29,
                 messageId: "emojiModifier",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -445,7 +445,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 15,
                 messageId: "regionalIndicatorSymbol",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -454,7 +454,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 35,
                 messageId: "regionalIndicatorSymbol",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -463,7 +463,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 11,
                 endColumn: 29,
                 messageId: "regionalIndicatorSymbol",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -479,7 +479,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 12,
                     endColumn: 15,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 14,
@@ -491,7 +491,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 15,
                     endColumn: 18,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 17,
@@ -508,7 +508,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 19,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -519,7 +519,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 16,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -530,13 +530,13 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 16,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 18,
                     endColumn: 23,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -547,13 +547,13 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 19,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 24,
                     endColumn: 32,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -564,13 +564,13 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 19,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 19,
                     endColumn: 24,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -581,7 +581,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 59,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -592,7 +592,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 54,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -603,7 +603,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 41,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -614,7 +614,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 37,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -625,13 +625,13 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 11,
                     endColumn: 54,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 59,
                     endColumn: 102,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -686,7 +686,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 18,
                 endColumn: 20,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -697,7 +697,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 endLine: 2,
                 endColumn: 4,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -706,7 +706,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 40,
                 endColumn: 42,
                 messageId: "surrogatePairWithoutUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -779,7 +779,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 24,
                 messageId: "surrogatePairWithoutUFlag",
-                suggestions: null // ecmaVersion doesn't support the 'u' flag
+                suggestions: [] // ecmaVersion doesn't support the 'u' flag
             }]
         },
         {
@@ -789,7 +789,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 24,
                 messageId: "surrogatePairWithoutUFlag",
-                suggestions: null // ecmaVersion doesn't support the 'u' flag
+                suggestions: [] // ecmaVersion doesn't support the 'u' flag
             }]
         },
         {
@@ -798,7 +798,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 24,
                 messageId: "surrogatePairWithoutUFlag",
-                suggestions: null // pattern would be invalid with the 'u' flag
+                suggestions: [] // pattern would be invalid with the 'u' flag
             }]
         },
         {
@@ -827,7 +827,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 24,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -836,7 +836,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 24,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -845,7 +845,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 36,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -854,7 +854,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 36,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -863,7 +863,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 37,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -872,7 +872,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 24,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -881,7 +881,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 24,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -890,7 +890,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 14,
                 endColumn: 22,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -899,7 +899,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 14,
                 endColumn: 22,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -909,13 +909,13 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 14,
                     endColumn: 22,
                     messageId: "combiningClass",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 24,
                     endColumn: 32,
                     messageId: "combiningClass",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -925,7 +925,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 36,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -934,7 +934,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 36,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -943,7 +943,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 40,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -969,7 +969,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 26,
                 messageId: "emojiModifier",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -978,7 +978,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 50,
                 messageId: "emojiModifier",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -987,7 +987,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 42,
                 messageId: "emojiModifier",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1152,7 +1152,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 26,
                 messageId: "regionalIndicatorSymbol",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1161,7 +1161,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 50,
                 messageId: "regionalIndicatorSymbol",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1170,7 +1170,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 22,
                 endColumn: 42,
                 messageId: "regionalIndicatorSymbol",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1186,7 +1186,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 23,
                     endColumn: 26,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 25,
@@ -1198,7 +1198,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 26,
                     endColumn: 29,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 28,
@@ -1215,7 +1215,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 22,
                     endColumn: 30,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1226,7 +1226,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 22,
                     endColumn: 27,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1237,13 +1237,13 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 22,
                     endColumn: 27,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 29,
                     endColumn: 34,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1254,13 +1254,13 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 22,
                     endColumn: 30,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 35,
                     endColumn: 43,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1271,13 +1271,13 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 22,
                     endColumn: 30,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     column: 30,
                     endColumn: 35,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1288,7 +1288,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 22,
                     endColumn: 78,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1299,7 +1299,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 22,
                     endColumn: 70,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1310,7 +1310,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 33,
                 endColumn: 35,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1320,7 +1320,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 33,
                 endColumn: 37,
                 messageId: "emojiModifier",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1349,7 +1349,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                     column: 33,
                     endColumn: 81,
                     messageId: "zwj",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1357,28 +1357,28 @@ ruleTester.run("no-misleading-character-class", rule, {
             code: String.raw`/[\ud83d\u{dc4d}]/u`,
             errors: [{
                 messageId: "surrogatePair",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
             code: String.raw`/[\u{d83d}\udc4d]/u`,
             errors: [{
                 messageId: "surrogatePair",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
             code: String.raw`/[\u{d83d}\u{dc4d}]/u`,
             errors: [{
                 messageId: "surrogatePair",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
             code: String.raw`/[\uD83D\u{DC4d}]/u`,
             errors: [{
                 messageId: "surrogatePair",
-                suggestions: null
+                suggestions: []
             }]
         },
 
@@ -1506,7 +1506,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 29,
                 endColumn: 37,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1520,7 +1520,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 26,
                 endColumn: 38,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1535,7 +1535,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 26,
                 endColumn: 36,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1549,7 +1549,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 26,
                 endColumn: 35,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1565,7 +1565,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 endLine: 5,
                 endColumn: 5,
                 messageId: "combiningClass",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1579,7 +1579,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 26,
                 endColumn: 35,
                 messageId: "zwj",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1593,7 +1593,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 26,
                 endColumn: 38,
                 messageId: "zwj",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1609,7 +1609,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 endLine: 5,
                 endColumn: 9,
                 messageId: "zwj",
-                suggestions: null
+                suggestions: []
             }]
         },
 
@@ -1622,7 +1622,7 @@ ruleTester.run("no-misleading-character-class", rule, {
                 column: 12,
                 endColumn: 16,
                 messageId: "emojiModifier",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -1650,12 +1650,12 @@ ruleTester.run("no-misleading-character-class", rule, {
          *         column: 11,
          *         endColumn: 15,
          *         messageId: "emojiModifier",
-         *         suggestions: null
+         *         suggestions: []
          *     }, {
          *         column: 27,
          *         endColumn: 28,
          *         messageId: "emojiModifier",
-         *         suggestions: null
+         *         suggestions: []
          *     }]
          * }
          */

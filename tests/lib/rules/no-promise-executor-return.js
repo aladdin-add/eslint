@@ -167,7 +167,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 type: "ReturnStatement",
                 column: 42,
                 endColumn: 51,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -421,7 +421,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
 
@@ -551,7 +551,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -559,7 +559,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
 
@@ -569,7 +569,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -577,7 +577,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -585,7 +585,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -621,7 +621,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -629,7 +629,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -651,7 +651,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
 
@@ -661,7 +661,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -669,7 +669,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -677,7 +677,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
 
@@ -687,7 +687,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
 
@@ -726,7 +726,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -734,7 +734,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -759,7 +759,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 45,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -768,7 +768,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 48,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -777,7 +777,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 50,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -786,7 +786,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 52,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -795,7 +795,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 71,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -804,7 +804,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 38,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -813,7 +813,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 62,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -822,7 +822,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 30,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -831,7 +831,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 27,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -840,7 +840,7 @@ ruleTester.run("no-promise-executor-return", rule, {
                 messageId: "returnsValue",
                 type: "ReturnStatement",
                 column: 27,
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -934,7 +934,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -942,7 +942,7 @@ ruleTester.run("no-promise-executor-return", rule, {
             errors: [{
                 messageId: "returnsValue",
                 type: "ReturnStatement",
-                suggestions: null
+                suggestions: []
             }]
         }
     ]

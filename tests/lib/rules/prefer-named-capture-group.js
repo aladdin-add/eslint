@@ -189,7 +189,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "NewExpression",
                 data: { group: "(b)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -395,7 +395,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "NewExpression",
                 data: { group: "(a)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -404,7 +404,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "NewExpression",
                 data: { group: "(bc)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -414,13 +414,13 @@ ruleTester.run("prefer-named-capture-group", rule, {
                     messageId: "required",
                     type: "NewExpression",
                     data: { group: "(a)" },
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     messageId: "required",
                     type: "NewExpression",
                     data: { group: "(b)" },
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -430,7 +430,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "NewExpression",
                 data: { group: "(b)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -439,7 +439,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "CallExpression",
                 data: { group: "(a)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -448,7 +448,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "CallExpression",
                 data: { group: "(ab)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -457,7 +457,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "NewExpression",
                 data: { group: "(ab)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -506,7 +506,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "NewExpression",
                 data: { group: "(b)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -515,7 +515,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "CallExpression",
                 data: { group: "(a)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -524,7 +524,7 @@ ruleTester.run("prefer-named-capture-group", rule, {
                 messageId: "required",
                 type: "CallExpression",
                 data: { group: "(b)" },
-                suggestions: null
+                suggestions: []
             }]
         },
         {

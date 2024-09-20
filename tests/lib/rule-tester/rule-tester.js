@@ -496,7 +496,7 @@ describe("RuleTester", () => {
                     "eval(foo)"
                 ],
                 invalid: [
-                    { code: "eval(foo)", errors: [{ message: "eval sucks.", type: "CallExpression" }] }
+                    { code: "eval(foo);", errors: [{ message: "eval sucks.", type: "CallExpression" }] }
                 ]
             });
         }, /Should have no errors but had 1/u);
@@ -510,7 +510,7 @@ describe("RuleTester", () => {
                     { code: "eval(foo)" }
                 ],
                 invalid: [
-                    { code: "eval(foo)", errors: [{ message: "eval sucks.", type: "CallExpression" }] }
+                    { code: "eval(foo);", errors: [{ message: "eval sucks.", type: "CallExpression" }] }
                 ]
             });
         }, /Should have no errors but had 1/u);
@@ -524,7 +524,7 @@ describe("RuleTester", () => {
                     "Eval(foo)"
                 ],
                 invalid: [
-                    { code: "Eval(foo)", errors: [{ message: "eval sucks.", type: "CallExpression" }] }
+                    { code: "Eval(foo);", errors: [{ message: "eval sucks.", type: "CallExpression" }] }
                 ]
             });
         }, /Should have 1 error but had 0/u);
@@ -653,7 +653,7 @@ describe("RuleTester", () => {
                     { code: "foo", errors: ["Avoid using identifiers named 'foo'."] }
                 ]
             });
-        }, "Error at index 0 has suggestions. Please convert the test error into an object and specify 'suggestions' property on it to test suggestions.");
+        }, /Error at index 0 has suggestions/u);
     });
 
     it("should throw an error when the error is an object with an unknown property name", () => {
@@ -663,7 +663,7 @@ describe("RuleTester", () => {
                     "bar = baz;"
                 ],
                 invalid: [
-                    { code: "var foo = bar;", errors: [{ Message: "Bad var." }] }
+                    { code: "var foo = bar;", errors: [{ message: "msg...", Message: "Bad var." }] }
                 ]
             });
         }, /Invalid error property name 'Message'/u);
@@ -738,7 +738,7 @@ describe("RuleTester", () => {
                     { code: "var foo = bar;", output: 5, errors: 1 }
                 ]
             });
-        }, /Output is incorrect/u);
+        }, /Invalid test case property 'output'/u);
     });
 
     it("should throw an error when the expected output doesn't match and errors is just a number", () => {
@@ -1007,7 +1007,7 @@ describe("RuleTester", () => {
                     "1eval('foo')"
                 ],
                 invalid: [
-                    { code: "eval('foo')", errors: [{}] }
+                    { code: "eval('foo')", errors: [{ message: "msg" }] }
                 ]
             });
         }, /fatal parsing error/iu);
@@ -1020,7 +1020,7 @@ describe("RuleTester", () => {
                     "noeval('foo')"
                 ],
                 invalid: [
-                    { code: "1eval('foo')", errors: [{}] }
+                    { code: "1eval('foo')", errors: [{ message: "msg" }] }
                 ]
             });
         }, /fatal parsing error/iu);
@@ -1045,7 +1045,7 @@ describe("RuleTester", () => {
             ruleTester.run("no-eval", require("../../fixtures/testers/rule-tester/no-eval"), {
                 valid: [],
                 invalid: [
-                    { code: "eval(`foo`", output: "eval(`foo`);", errors: [{}] }
+                    { code: "eval(`foo`", output: "eval(`foo`);", errors: [{ message: /fatal parsing error/u }] }
                 ]
             });
         }, /fatal parsing error/iu);
@@ -1993,7 +1993,7 @@ describe("RuleTester", () => {
         assert.throws(() => {
             ruleTester.run("foo", require("../../fixtures/testers/rule-tester/messageId").withMetaWithData, {
                 valid: [],
-                invalid: [{ code: "foo", errors: [{ data: "something" }] }]
+                invalid: [{ code: "foo", errors: [{ data: {} }] }]
             });
         }, "Test error must specify either a 'messageId' or 'message'.");
     });
@@ -2301,35 +2301,31 @@ describe("RuleTester", () => {
         });
 
         it("should support explicitly expecting no suggestions", () => {
-            [void 0, null, false, []].forEach(suggestions => {
-                ruleTester.run("suggestions-basic", require("../../fixtures/testers/rule-tester/no-eval"), {
-                    valid: [],
-                    invalid: [{
-                        code: "eval('var foo');",
-                        errors: [{
-                            message: "eval sucks.",
-                            suggestions
-                        }]
+            ruleTester.run("suggestions-basic", require("../../fixtures/testers/rule-tester/no-eval"), {
+                valid: [],
+                invalid: [{
+                    code: "eval('var foo');",
+                    errors: [{
+                        message: "eval sucks.",
+                        suggestions: []
                     }]
-                });
+                }]
             });
         });
 
         it("should fail when expecting no suggestions and there are suggestions", () => {
-            [void 0, null, false, []].forEach(suggestions => {
-                assert.throws(() => {
-                    ruleTester.run("suggestions-basic", require("../../fixtures/testers/rule-tester/suggestions").basic, {
-                        valid: [],
-                        invalid: [{
-                            code: "var foo;",
-                            errors: [{
-                                message: "Avoid using identifiers named 'foo'.",
-                                suggestions
-                            }]
+            assert.throws(() => {
+                ruleTester.run("suggestions-basic", require("../../fixtures/testers/rule-tester/suggestions").basic, {
+                    valid: [],
+                    invalid: [{
+                        code: "var foo;",
+                        errors: [{
+                            message: "Avoid using identifiers named 'foo'.",
+                            suggestions: []
                         }]
-                    });
-                }, "Error should have no suggestions on error with message: \"Avoid using identifiers named 'foo'.\"");
-            });
+                    }]
+                });
+            }, "Error should have no suggestions on error with message: \"Avoid using identifiers named 'foo'.\"");
         });
 
         it("should fail when testing for suggestions that don't exist", () => {
@@ -2951,7 +2947,7 @@ describe("RuleTester", () => {
             assert.throws(() => {
                 ruleTester.run("foo", require("../../fixtures/testers/rule-tester/no-var"), {
                     valid: [{ code: "foo", name: 123 }],
-                    invalid: [{ code: "foo" }]
+                    invalid: [{ code: "foo;" }]
 
                 });
             }, /Optional test case property 'name' must be a string/u);
@@ -2959,7 +2955,7 @@ describe("RuleTester", () => {
             assert.throws(() => {
                 ruleTester.run("foo", require("../../fixtures/testers/rule-tester/no-var"), {
                     valid: ["foo"],
-                    invalid: [{ code: "foo", name: 123 }]
+                    invalid: [{ code: "foo;", name: 123 }]
                 });
             }, /Optional test case property 'name' must be a string/u);
         });
@@ -2976,10 +2972,10 @@ describe("RuleTester", () => {
             assert.throws(() => {
                 ruleTester.run("foo", require("../../fixtures/testers/rule-tester/no-var"), {
                     valid: [123],
-                    invalid: [{ code: "foo" }]
+                    invalid: [{ code: "foo", message: "msg..." }]
 
                 });
-            }, /Test case must specify a string value for 'code'/u);
+            }, /Test case must be a string or object/u);
 
             assert.throws(() => {
                 ruleTester.run("foo", require("../../fixtures/testers/rule-tester/no-var"), {
@@ -3465,7 +3461,7 @@ describe("RuleTester", () => {
                         valid: [],
                         invalid: [{
                             code: "",
-                            errors: [{}]
+                            errors: [{ message: /cannot be called inside a rule/u }]
                         }]
                     });
                 }, `\`SourceCode#${methodName}()\` cannot be called inside a rule.`);

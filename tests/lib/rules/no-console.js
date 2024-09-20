@@ -45,7 +45,7 @@ ruleTester.run("no-console", rule, {
             errors: [{
                 messageId: "unexpected",
                 type: "MemberExpression",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -53,7 +53,7 @@ ruleTester.run("no-console", rule, {
             errors: [{
                 messageId: "unexpected",
                 type: "MemberExpression",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -159,7 +159,7 @@ ruleTester.run("no-console", rule, {
             errors: [{
                 messageId: "unexpected",
                 type: "MemberExpression",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -168,7 +168,7 @@ ruleTester.run("no-console", rule, {
             errors: [{
                 messageId: "unexpected",
                 type: "MemberExpression",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -192,7 +192,7 @@ ruleTester.run("no-console", rule, {
             errors: [{
                 messageId: "unexpected",
                 type: "MemberExpression",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -201,7 +201,7 @@ ruleTester.run("no-console", rule, {
             errors: [{
                 messageId: "unexpected",
                 type: "MemberExpression",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -304,7 +304,7 @@ ruleTester.run("no-console", rule, {
             errors: [{
                 messageId: "unexpected",
                 type: "MemberExpression",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -313,7 +313,7 @@ ruleTester.run("no-console", rule, {
             errors: [{
                 messageId: "unexpected",
                 type: "MemberExpression",
-                suggestions: null
+                suggestions: []
             }]
         },
         {

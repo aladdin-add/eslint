@@ -128,7 +128,7 @@ ruleTester.run("no-empty", rule, {
                 messageId: "unexpected",
                 data: { type: "switch" },
                 type: "SwitchStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -137,7 +137,7 @@ ruleTester.run("no-empty", rule, {
                 messageId: "unexpected",
                 data: { type: "switch" },
                 type: "SwitchStatement",
-                suggestions: null
+                suggestions: []
             }]
         },
         {

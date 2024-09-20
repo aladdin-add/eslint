@@ -899,7 +899,7 @@ ruleTester.run("prefer-regex-literals", rule, {
                     type: "NewExpression",
                     line: 1,
                     column: 1,
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -919,7 +919,7 @@ ruleTester.run("prefer-regex-literals", rule, {
                     type: "NewExpression",
                     line: 1,
                     column: 1,
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -934,7 +934,7 @@ ruleTester.run("prefer-regex-literals", rule, {
                     type: "NewExpression",
                     line: 2,
                     column: 1,
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -949,7 +949,7 @@ ruleTester.run("prefer-regex-literals", rule, {
                     type: "NewExpression",
                     line: 2,
                     column: 1,
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1012,7 +1012,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1021,7 +1021,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1030,7 +1030,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1039,7 +1039,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1048,7 +1048,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1057,7 +1057,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1066,7 +1066,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1075,7 +1075,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1088,7 +1088,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1100,7 +1100,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1213,7 +1213,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1222,7 +1222,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1231,7 +1231,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1503,7 +1503,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1576,7 +1576,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1585,11 +1585,11 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 },
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1772,7 +1772,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -1781,7 +1781,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -2599,7 +2599,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -2611,7 +2611,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -2634,7 +2634,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -2825,7 +2825,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -2852,7 +2852,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -2862,7 +2862,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -2872,7 +2872,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRegExp",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -2902,7 +2902,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRedundantRegExpWithFlags",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },
@@ -3002,7 +3002,7 @@ ruleTester.run("prefer-regex-literals", rule, {
             errors: [
                 {
                     messageId: "unexpectedRedundantRegExpWithFlags",
-                    suggestions: null
+                    suggestions: []
                 }
             ]
         },

@@ -70,7 +70,7 @@ ruleTester.run("require-unicode-regexp", rule, {
             code: "/\\a/",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -101,7 +101,7 @@ ruleTester.run("require-unicode-regexp", rule, {
             code: "RegExp()",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -120,7 +120,7 @@ ruleTester.run("require-unicode-regexp", rule, {
             code: "RegExp('\\\\a')",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -190,14 +190,14 @@ ruleTester.run("require-unicode-regexp", rule, {
             code: "new RegExp('foo', false)",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
             code: "new RegExp('foo', 1)",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -252,35 +252,35 @@ ruleTester.run("require-unicode-regexp", rule, {
             code: "const flags = 'gi'; new RegExp('foo', flags)",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
             code: "const flags = 'gi'; new RegExp('foo', ('unrelated', flags))",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
             code: "let flags; new RegExp('foo', flags = 'g')",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
             code: "const flags = `gi`; new RegExp(`foo`, (`unrelated`, flags))",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
             code: "const flags = 'gimu'; new RegExp('foo', flags[0])",
             errors: [{
                 messageId: "requireUFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -356,7 +356,7 @@ ruleTester.run("require-unicode-regexp", rule, {
             languageOptions: { ecmaVersion: 6 },
             errors: [{
                 messageId: "requireVFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -365,7 +365,7 @@ ruleTester.run("require-unicode-regexp", rule, {
             languageOptions: { ecmaVersion: 2024 },
             errors: [{
                 messageId: "requireVFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -388,7 +388,7 @@ ruleTester.run("require-unicode-regexp", rule, {
             languageOptions: { ecmaVersion: 2024 },
             errors: [{
                 messageId: "requireVFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -425,7 +425,7 @@ ruleTester.run("require-unicode-regexp", rule, {
             languageOptions: { ecmaVersion: 2024 },
             errors: [{
                 messageId: "requireVFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -434,7 +434,7 @@ ruleTester.run("require-unicode-regexp", rule, {
             languageOptions: { ecmaVersion: 2024 },
             errors: [{
                 messageId: "requireVFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
@@ -457,7 +457,7 @@ ruleTester.run("require-unicode-regexp", rule, {
             languageOptions: { ecmaVersion: 2024 },
             errors: [{
                 messageId: "requireVFlag",
-                suggestions: null
+                suggestions: []
             }]
         },
         {
