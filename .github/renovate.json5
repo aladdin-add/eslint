@@ -1,28 +1,15 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["github>eslint/workflows//.github/renovate/base.json5"],
-  ignoreDeps: [
-    // markdownlint-cli2 v0.23.0 and later require Node.js 22 or later, so updates are blocked for now.
-    "markdownlint-cli2",
-  ],
+  extends: ["config:recommended", ":dependencyDashboard"],
+  platformAutomerge: true,
   packageRules: [
     {
-      description: "Group Babel packages into a single PR.",
-      groupName: "babel",
-      matchPackagePrefixes: ["@babel", "babel-"],
-    },
-    {
-      description: "Update ESLint packages together.",
-      groupName: "eslint",
-      matchPackagePrefixes: ["@eslint/"],
-      matchPackageNames: ["espree", "eslint-scope", "eslint-visitor-keys"],
-      minimumReleaseAge: null, // Don't wait for these packages
-      rangeStrategy: "bump",
-    },
-    {
-      description: "Group metascraper packages into a single PR.",
-      groupName: "metascraper",
-      matchPackagePrefixes: ["metascraper"],
+      description: "自动合并非 major 更新（排除 0.x 版本）",
+      matchUpdateTypes: ["minor", "patch"],
+      matchCurrentVersion: "!/^0/",
+      automerge: true,
     },
   ],
+  automergeStrategy: "squash",
+  rangeStrategy: "bump",
 }
