@@ -21,4 +21,5 @@
       matchPackagePrefixes: ["metascraper"],
     },
   ],
+  automerge: true,
 }
