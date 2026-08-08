@@ -25,14 +25,14 @@ jobs:
               run: npm install
 
             - name: Lint Files (eslint)
-              uses: trunk-io/trunk-action@v1
+              uses: trunk-io/trunk-action@04ba50e7658c81db7356da96657e6e77f220bfa3 # v1
               with:
                   # Run on everything except the docs folder.
                   arguments: --ignore=docs/** --filter=eslint
                   check-mode: all
 
             - name: Lint Files (other)
-              uses: trunk-io/trunk-action@v1
+              uses: trunk-io/trunk-action@04ba50e7658c81db7356da96657e6e77f220bfa3 # v1
               with:
                   # Run on everything except the docs folder.
                   arguments: --ignore=docs/** --filter=-eslint
@@ -44,14 +44,14 @@ jobs:
               run: node Makefile checkLicenses
 
             - name: Lint Docs Files (eslint)
-              uses: trunk-io/trunk-action@v1
+              uses: trunk-io/trunk-action@04ba50e7658c81db7356da96657e6e77f220bfa3 # v1
               with:
                   # Run only on the docs folder.
                   arguments: --ignore=** --ignore=!docs/** --filter=eslint
                   check-mode: all
 
             - name: Lint Docs Files (other)
-              uses: trunk-io/trunk-action@v1
+              uses: trunk-io/trunk-action@04ba50e7658c81db7356da96657e6e77f220bfa3 # v1
               with:
                   # Run only on the docs folder.
                   arguments: --ignore=** --ignore=!docs/** --filter=-eslint
