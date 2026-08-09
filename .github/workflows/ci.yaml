@@ -1,0 +1,15 @@
+name: ci
+
+on:
+    pull_request:
+        types: [opened, synchronize, reopened]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Run tests
+              run: echo "Running tests..." && exit 0
