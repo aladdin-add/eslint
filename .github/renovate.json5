@@ -12,4 +12,5 @@
   ],
   automergeStrategy: "squash",
   rangeStrategy: "bump",
+  enabled: false,
 }
